@@ -1,0 +1,43 @@
+/*DOCUMENTO.CSS*/
+* { margin: 0px;
+        padding: 0px;}
+
+body { background-color:brown;}
+
+h1 { padding: 8px 0px; 
+       color: white;}
+
+h2 { padding: 8px 0px; 
+    color: white;}
+
+.cabecera { margin: 16 px;
+           margin-top: 16px;
+           text-align: center; }
+
+.musica { width: 80%;}
+
+.musica audio {display: block;
+                margin: auto;}
+
+.videos { width: 80%; 
+          min-height: 350px;
+          margin: 16px auto 200px auto; 
+          display: flex;
+          flex-direction: column; }
+
+.videos div { width: 100%; }
+
+.videos iframe, .videos video { width: 100%; 
+                                height: 300px;}
+
+.pie { background-color: blanchedalmond; 
+      padding: 16px 0px; 
+      text-align: center; }
+
+@media only screen and (min-width:992px) {
+
+.videos {  flex-direction: row; }
+
+.videos div { width: 50% }
+
+}

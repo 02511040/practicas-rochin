@@ -1,0 +1,23 @@
+/*DOCUMENTO CSS*/
+* {margin:  0px; 
+     padding: 0px; }
+
+h1 { font-family: "Oswald", sans-serif;
+     text-align: center; }
+
+.cabecera { margin-bottom: 32px; }
+
+.tablas { margin-bottom: 32px;
+         min-height: 1px;
+         padding: 16px 0px 16px 0px;
+         background-color:aqua; }
+
+.tablas table { margin: auto; }
+
+div.tablas {background-color: blueviolet;
+             margin-bottom: auto; }
+
+
+
+.pie {background-color: brown;
+     text-align: center; }

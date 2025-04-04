@@ -1,0 +1,105 @@
+/*DOCUMENTO CSS*/
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+@font-face { font-family: 'Bebas Neue';
+    src: url('../fonts/transfonter.org-20250326-203843/BebasNeue-Regular.woff2') format('woff2'),
+         url('../fonts/transfonter.org-20250326-203843/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; }
+
+body { font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; }
+
+header { background-color: darkgreen;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0; }
+
+header .perfil { width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+
+header h1 { font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px; }
+
+header p { font-size: 1.2em; }
+
+main { padding: 40px 10%; }
+
+section { margin-bottom: 30px; }
+
+h2 { font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+    margin-bottom: 15px; }
+
+i { margin-right: 10px; }
+
+footer { background-color: darkgreen;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center; }
+
+footer a { color: whitesmoke;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em; }
+
+footer a:hover { color: #ffbb33; }
+
+form input, form button { width: 100%;
+    padding: 10px;
+    margin-top: 10px; }
+
+form button { background-color: darkgreen;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer; }
+
+form button:hover { background-color: #333; }
+
+
+
+/* Flexbox para una mejor estructura */
+.container { display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.container .items { width: 100%;
+    padding: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+
+.container .items ul { list-style-type: none; }
+
+.container .items:hover { background-color: #333;
+    color: whitesmoke; }
+
+    
+/*BREAKPOINT 600PX*/
+
+@media only screen and (min-width: 600px) {
+    header h1 { font-size: 3.5em; }
+
+    .container .items { width: 45%; }
+}
+
+/*BREAKPOINT 992PX*/
+
+@media only screen and (min-width: 992px) {
+    .container .items { width: 30%; }
+
+    footer { font-size: 1.1em; }
+
+    .container { width: 80%;
+        margin: auto;
+        border-radius: 16px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+}
